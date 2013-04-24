@@ -19,6 +19,14 @@ rescue NoMethodError
   end
 end
 
+# Hack to fix vendor gems not loading beacuse railties uses old
+# Gem::SourceIndex#add_spec which doesn't work with rubygems 1.8
+if defined?(Gem::Specification.add_spec)
+  Gem.source_index.each do |name,spec|
+    Gem::Specification.add_spec spec
+  end
+end
+
 Rails::Initializer.run do |config|
   # Settings in config/environments/* take precedence over those specified here.
   # Application configuration should go into files in config/initializers
