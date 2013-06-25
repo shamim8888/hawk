@@ -1019,7 +1019,7 @@ msgstr "Vue Tableau"
 
 #: app/views/main/_gettext.js.erb:122
 msgid "%{node}: %{state}"
-msgstr "%{node} : %{status}"
+msgstr "%{node} : %{state}"
 
 #: app/views/main/_gettext.js.erb:128
 msgid "Offline"
