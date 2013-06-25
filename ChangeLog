@@ -1,3 +1,21 @@
+* Tue Jun 25 2013 Tim Serong <tserong@suse.com>
+- GUI: Primitive editor: Fix default list of resource types (bnc#826530)
+- GUI: Fix broken French translation of node status (bnc#825949)
+- GUI: status: Allow summary panel to stretch to handle long strings
+- Misc: Primitive model: Use PerRequestCache for classes and providers
+- Misc: Fix Hawk URL display with >1 defualt route in init script (bnc#811102)
+- Build: Ensure BUILD_TAG is from current branch
+- Upstream version cs:e481929
+
+* Thu Dec 20 2012 Tim Serong <tserong@suse.com>
+- GUI: Simulator: invoke crm_simulate with -S, not -R (fixes odd final
+  state, bnc#781207)
+- Misc: Util: Use user's real $HOME with fallback to per-user temp
+  (bnc#780973)
+- Misc: Set sensible default $HOME in ApplicationController
+- GUI: Constraints: Use !empty? instead of String#any? (ruby 1.9 support)
+- Upstream version cs:c5b9e95
+
 * Mon Jul 09 2012 Tim Serong <tserong@suse.com>
 - GUI: jQuery: Fix AJAX memory leak in IE8 (bnc#764273)
 - GUI: summary_view: Fix IE JS error on detail pane update (bnc#765625)
