@@ -1,0 +1,5 @@
+language: ruby
+branches:
+  except:
+    - rails-2_3
+    - sle-11-sp2
